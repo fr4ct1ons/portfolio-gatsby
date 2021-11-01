@@ -1,14 +1,15 @@
 import React from "react"
 import Navbar from "./Navbar";
-import appStyles from "../styles/App.module.css"
+import "../styles/global.css"
+import "../fonts/Arimo-Regular.ttf"
 
 export default function Layout({children}) 
 {
     //style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}
   return (
-    <div className={appStyles.App}>
+    <div>
       <Navbar/>
-      <div style={{width: "70%", margin: "auto"}}>
+      <div style={{width: "88%", margin: "auto"}}>
         {children}
       </div>
     </div>

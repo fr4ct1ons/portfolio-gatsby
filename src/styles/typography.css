@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Arimo';
+    src: local('Arimo'), url('../fonts/Arimo-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Arimo-I';
+    src: local('Arimo'), url('../fonts/Arimo-Italic.ttf') format('truetype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Arimo-B';
+    src: local('Arimo'), url('../fonts/Arimo-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Arimo-IB';
+    src: local('Arimo'), url('../fonts/Arimo-BoldItalic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-ExtraLight';
+    src: url("../fonts/Montserrat-ExtraLight.otf");
+}
+  
