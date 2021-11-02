@@ -9,7 +9,7 @@ export default function Layout({children})
   return (
     <div>
       <Navbar/>
-      <div style={{width: "88%", margin: "auto"}}>
+      <div style={{width: "75%", margin: "auto"}}>
         {children}
       </div>
     </div>

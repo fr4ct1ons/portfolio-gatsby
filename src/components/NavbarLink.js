@@ -24,7 +24,7 @@ render(){
 
 
     return(
-        <p><Link to={this.props.route} style={{color : newColor}}> {this.props.name} </Link></p>
+        <p className="NavbarPA"><Link to={this.props.route} style={{color : newColor, textDecoration :"none"}}> {this.props.name} </Link></p>
     )
 }
 }
