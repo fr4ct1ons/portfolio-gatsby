@@ -16,7 +16,7 @@ h1
 {
   color: red;
   font-family: 'Montserrat-ExtraLight';
-  font-size: 5em;
+  font-size: 2.5em;
   margin-bottom: .25em;
 }
 
@@ -33,6 +33,7 @@ h2
 {
   color: rgb(150, 150, 150);
   font-family: "Montserrat";
+  font-size: 1.2em;
 }
 
 body

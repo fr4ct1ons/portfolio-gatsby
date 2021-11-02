@@ -24,7 +24,7 @@ render(){
 
 
     return(
-        <li><Link to={this.props.route} style={{color : newColor}}> {this.props.name} </Link></li>
+        <p><Link to={this.props.route} style={{color : newColor}}> {this.props.name} </Link></p>
     )
 }
 }
