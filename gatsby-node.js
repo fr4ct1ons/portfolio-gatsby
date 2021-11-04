@@ -3,6 +3,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   
     const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
     const pageTemplate = require.resolve(`./src/templates/pageTemplate.js`)
+    const artGallery = require.resolve(`./src/pages/art.js`)
   
     const result = await graphql(`
       {
@@ -13,7 +14,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           edges {
             node {
               frontmatter {
+                iconImage
                 slug
+                gallery
               }
             }
           }
@@ -36,6 +39,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           context: {
             // additional data can be passed via context
             slug: node.frontmatter.slug,
+            gallery: node.frontmatter.gallery,
+            iconImage: node.frontmatter.iconImage,
           },
         })
       }
@@ -47,6 +52,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           context: {
             // additional data can be passed via context
             slug: node.frontmatter.slug,
+            gallery: node.frontmatter.gallery,
+            iconImage: node.frontmatter.iconImage,
           },
         })
       }
