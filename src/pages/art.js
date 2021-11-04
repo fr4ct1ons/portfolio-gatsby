@@ -1,8 +1,10 @@
 import React from "react";
 import Page from "../components/Page";
 import GalleryEntry from "../components/GalleryEntry"
+import GalleryEntryDynamic from "../components/GalleryEntryDynamic"
 import Layout from "../components/layout";
-import {Link, graphql} from "gatsby"
+import {Link, graphql, useStaticQuery} from "gatsby"
+import {StaticImage, GatsbyImage, getImage} from "gatsby-plugin-image"
 
 const ArtGallery = ({ 
   data: 
@@ -14,13 +16,18 @@ const ArtGallery = ({
       {
         let image;
         let icon = edge.node.frontmatter.iconImage;
-        image = require("../../public/images/ArtWorks.png");
+        image = require("../images/ArtWorks.png");
         //image = require(icon)
-        console.log("../../public/images/ArtWorks.png")
+
+        //const imagg = getImage(icon)
         console.log(icon)
+        console.log(icon=="../images/ArtWorks.png")
 
         return(
-        <img src={image.default}/>
+        <GalleryEntryDynamic title={edge.node.frontmatter.title}
+        img={getImage(edge.node.frontmatter.Image01)}
+        url={edge.node.frontmatter.slug}
+         />
         )
       }
      )
@@ -45,6 +52,7 @@ export default ArtGallery
 
       //<GalleryEntry title={edge.node.frontmatter.title} url={edge.node.frontmatter.slug} img={edge.node.frontmatter.iconImage}/> 
 
+      
 
 export const pageQuery = graphql`
   query {
@@ -54,10 +62,15 @@ export const pageQuery = graphql`
           id
           excerpt(pruneLength: 250)
           frontmatter {
-            iconImage
+            
             gallery
             slug
             title
+            Image01{
+              childImageSharp {
+                gatsbyImageData(blurredOptions: {width: 100}, placeholder: BLURRED)
+              }
+            }
           }
         }
       }

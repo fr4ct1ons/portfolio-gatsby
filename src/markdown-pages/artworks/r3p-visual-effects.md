@@ -1,7 +1,7 @@
 ---
 title: "Rise of the Third Power - Visual Effects"
 gallery: "art"
-iconImage: ../../public/images/ArtWorks.png
+Image01: ../../images/ArtWorks.png
 slug: "/artworks/RiseThirdPowerVFX"
 shortTitle: "Rise of the Third Power VFX"
 ---

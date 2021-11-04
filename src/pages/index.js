@@ -3,8 +3,8 @@ import Page from "../components/Page"
 import Layout from "../components/layout"
 import "../fonts/Arimo-Regular.ttf"
 import GalleryEntry from "../components/GalleryEntry"
-import artworks from "../../public/images/ArtWorks.png"
-import software from "../../public/images/CSRP.png"
+import artworks from "../images/ArtWorks.png"
+import software from "../images/CSRP.png"
 import {Link} from 'gatsby';
 
 export default function Home() {

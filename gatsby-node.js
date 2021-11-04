@@ -14,7 +14,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           edges {
             node {
               frontmatter {
-                iconImage
+                Image01
                 slug
                 gallery
               }
@@ -31,7 +31,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      if(node.frontmatter.pageType === "regular-page")
+      
       {
         createPage({
           path: node.frontmatter.slug,
@@ -40,20 +40,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             // additional data can be passed via context
             slug: node.frontmatter.slug,
             gallery: node.frontmatter.gallery,
-            iconImage: node.frontmatter.iconImage,
-          },
-        })
-      }
-      else
-      {
-        createPage({
-          path: node.frontmatter.slug,
-          component: pageTemplate,
-          context: {
-            // additional data can be passed via context
-            slug: node.frontmatter.slug,
-            gallery: node.frontmatter.gallery,
-            iconImage: node.frontmatter.iconImage,
+            Image01: node.frontmatter.Image01
           },
         })
       }
