@@ -31,4 +31,14 @@
     font-family: 'Montserrat-ExtraLight';
     src: url("../fonts/Montserrat-ExtraLight.otf");
 }
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url("../fonts/Montserrat-Light.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat-Thin';
+    src: url("../fonts/Montserrat-Thin.otf");
+}
   

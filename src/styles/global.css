@@ -6,6 +6,12 @@ html
     text-align: center;
 }
 
+.TextBlock
+{
+  width: 70%;
+  margin: auto;
+}
+
 .TextBlock p
 {
   color: white;
@@ -16,7 +22,7 @@ html
 h1
 {
   color: red;
-  font-family: 'Montserrat-ExtraLight';
+  font-family: 'Montserrat-Thin';
   font-size: 4em;
   margin-bottom: .25em;
 }
