@@ -18,7 +18,7 @@ export default function Home() {
     <div>
     <GalleryEntry url="art" title="ART WORKS" img={artworks}/>
     <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>
-    <GalleryEntry url="games" title="SOFTWARE" img={software}/>{/*
+    <GalleryEntry url="software" title="SOFTWARE" img={software}/>{/*
     {/*
     <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>{/*
       <div className="inlineDiv">
@@ -48,6 +48,5 @@ export default function Home() {
 */}
     </div>
 
-    <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer" style={{color: "rgb(75, 75, 75)"}}>Made with Gatsby.js</a>
   </Layout>
 }

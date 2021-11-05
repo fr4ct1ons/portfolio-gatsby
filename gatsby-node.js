@@ -14,7 +14,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           edges {
             node {
               frontmatter {
-                Image01
                 slug
                 gallery
               }

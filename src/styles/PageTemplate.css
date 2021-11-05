@@ -1,0 +1,43 @@
+@import "./typography.css";
+
+.PageTemplate h1
+{
+  color: red;
+  font-family: 'Montserrat-Thin';
+  font-size: 3em;
+  margin-bottom: .25em;
+}
+
+.PageTemplate h2
+{
+  color: rgb(150, 150, 150);
+  font-family: "Montserrat";
+  font-size: 1.5em;
+}
+
+.PageTemplate h3
+{
+  color: red;
+  font-family: 'Montserrat-ExtraLight';
+  font-size: 2em;
+  margin-bottom: .25em;
+  margin-top: .25em;
+}
+
+.PageTemplate p
+{
+    color: white;
+    font-family: "Arimo";
+    font-size: 1.2em;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.PageTemplate p a
+{
+  color: cyan;
+  font-family: "Arimo";
+  font-size: 1em;
+}

@@ -12,6 +12,9 @@ export default function Layout({children})
       <div style={{width: "88%", margin: "auto"}}>
         {children}
       </div>
+      <br/>
+      <br/>
+      <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer" style={{color: "rgb(75, 75, 75)"}}>Made with Gatsby.js</a>
     </div>
   )
 }
