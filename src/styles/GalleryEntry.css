@@ -31,3 +31,8 @@
     text-decoration: none;
     font-family: 'Montserrat';
 }
+
+.GalleryPageDyna p
+{
+    font-size: 130%;
+}

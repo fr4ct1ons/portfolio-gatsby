@@ -13,9 +13,9 @@ class GalleryEntryDynamic extends React.Component
     return(
         <div className="GalleryEntry">
             <a href={this.props.url}>
-                <div className="galleryPage">
+                <div className="GalleryPageDyna">
                     <GatsbyImage image={this.props.img}/>
-                    <p className="pageTitle">{this.props.title}</p>
+                    <p className="PageTitle">{this.props.title}</p>
                 </div>
             </a>
         </div>

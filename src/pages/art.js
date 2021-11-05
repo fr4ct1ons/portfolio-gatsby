@@ -24,7 +24,7 @@ const ArtGallery = ({
         console.log(icon=="../images/ArtWorks.png")
 
         return(
-        <GalleryEntryDynamic title={edge.node.frontmatter.title}
+        <GalleryEntryDynamic title={edge.node.frontmatter.shortTitle}
         img={getImage(edge.node.frontmatter.Image01)}
         url={edge.node.frontmatter.slug}
          />
@@ -66,6 +66,7 @@ export const pageQuery = graphql`
             gallery
             slug
             title
+            shortTitle
             Image01{
               childImageSharp {
                 gatsbyImageData(blurredOptions: {width: 100}, placeholder: BLURRED)
