@@ -38,8 +38,6 @@ const ArtGallery = ({
   return (
     <Layout>
       <Page title = "ART WORKS" subtitle = "2D, 3D and VFX art works"></Page>
-      
-      <h2> Teste</h2>
       {Posts}
       {/*<GalleryEntry title="Unreal water shader"
       img="https://pro2-bar-s3-cdn-cf5.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/6f71a0c5-8cc3-4d7d-9b74-bf2a0bcc2a8d.png?h=f74f57784e5d1808d20b4f08dbc531de"

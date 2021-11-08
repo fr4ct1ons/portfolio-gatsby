@@ -1,7 +1,7 @@
 ---
 title: "Fruit platter 3D model"
 gallery: "art"
-Image01: ../../images/ArtWorks.png
+Image01: ../../images/fruit_platter/fruits_thumb.png
 slug: "/artworks/fruit_platter"
 shortTitle: "Fruit platter"
 ---
@@ -14,8 +14,10 @@ This is a collection of stylized 3D models I made. Everything was modeled on Ble
 
 Below are some screenshots taken on Unreal Engine.
 
-![image](./cat.png)
+<img src="https://i.imgur.com/wPaCQK3.png"/>
 
-![image](../markdown-images/fruits1.png)
+<img src="https://i.imgur.com/cjp4NOC.png"/>
 
-![image](../../images/fruit_platter/cat.png)
+<img src="https://i.imgur.com/EKakFvC.png"/>
+
+<img src="https://i.imgur.com/RDvz7tj.png"/>

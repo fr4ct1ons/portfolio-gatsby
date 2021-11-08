@@ -1,5 +1,16 @@
 @import "./typography.css";
 
+/*.PageTemplate
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 80vw;
+  flex-direction: column;
+  flex: 1;
+}*/
+
 .PageTemplate h1
 {
   color: red;
@@ -40,4 +51,11 @@
   color: cyan;
   font-family: "Arimo";
   font-size: 1em;
+}
+
+.PageTemplate img
+{
+  width: 100%; 
+
+  margin-bottom: 1.3em;
 }

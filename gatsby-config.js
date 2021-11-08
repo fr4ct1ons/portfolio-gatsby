@@ -33,7 +33,14 @@ module.exports = {
         name: `fonts`,
         path: `${__dirname}/src/fonts`,
       },
-    }, 
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },  
     {
       resolve: `gatsby-transformer-remark`,
       options: {
