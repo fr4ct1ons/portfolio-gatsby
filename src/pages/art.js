@@ -1,10 +1,9 @@
 import React from "react";
 import Page from "../components/Page";
-import GalleryEntry from "../components/GalleryEntry"
 import GalleryEntryDynamic from "../components/GalleryEntryDynamic"
 import Layout from "../components/layout";
-import {Link, graphql, useStaticQuery} from "gatsby"
-import {StaticImage, GatsbyImage, getImage} from "gatsby-plugin-image"
+import {graphql} from "gatsby"
+import {getImage} from "gatsby-plugin-image"
 
 const ArtGallery = ({ 
   data: 
@@ -14,15 +13,6 @@ const ArtGallery = ({
 }) => {
   const Posts = edges.filter(edge =>edge.node.frontmatter.gallery == "art" ).map(edge =>
       {
-        let image;
-        let icon = edge.node.frontmatter.iconImage;
-        image = require("../images/ArtWorks.png");
-        //image = require(icon)
-
-        //const imagg = getImage(icon)
-        console.log(icon)
-        console.log(icon=="../images/ArtWorks.png")
-
         return(
         <GalleryEntryDynamic title={edge.node.frontmatter.shortTitle}
         img={getImage(edge.node.frontmatter.Image01)}

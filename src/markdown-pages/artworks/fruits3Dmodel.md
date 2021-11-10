@@ -4,6 +4,7 @@ gallery: "art"
 Image01: ../../images/fruit_platter/fruits_thumb.png
 slug: "/artworks/fruit_platter"
 shortTitle: "Fruit platter"
+date: "2021-02-01"
 ---
 
 This is a collection of stylized 3D models I made. Everything was modeled on Blender, with the textures being made on Substance Painter. While I did aim for a stylized look, I also wanted to maintain some details, such as bumps on the orange and pear and the yellow scratches on the apple.

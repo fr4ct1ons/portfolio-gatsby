@@ -14,7 +14,7 @@ export default function Layout({children})
       </div>
       <br/>
       <br/>
-      <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer" style={{color: "rgb(75, 75, 75)"}}>Made with Gatsby.js</a>
+      <a href="https://www.gatsbyjs.com/" target="_blank" rel="noopener noreferrer" style={{color: "rgb(75, 75, 75)", paddingBottom : "2em"}}>Made with Gatsby.js</a>
     </div>
   )
 }
