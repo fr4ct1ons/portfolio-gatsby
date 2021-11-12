@@ -1,15 +1,68 @@
 import React from "react";
 import Page from "../components/Page";
-import GalleryEntry from "../components/GalleryEntry"
+import GalleryEntryDynamic from "../components/GalleryEntryDynamic"
 import Layout from "../components/layout";
+import {graphql} from "gatsby"
+import {getImage} from "gatsby-plugin-image"
 
-export default function ArtGallery() {
+const Softwares = ({ 
+  data: 
+  {
+    allMarkdownRemark : { edges },
+  }, 
+}) => {
+  const Posts = edges.filter(edge =>edge.node.frontmatter.gallery == "software" ).map(edge =>
+      {
+        return(
+        <GalleryEntryDynamic title={edge.node.frontmatter.shortTitle}
+        img={getImage(edge.node.frontmatter.Image01)}
+        url={edge.node.frontmatter.slug}
+         />
+        )
+      }
+     )
+
+    console.log(Posts)
+    console.log(edges)
+
   return (
     <Layout>
-        <Page title = "SOFTWARE" subtitle = "Software I developed"></Page>
-        <GalleryEntry title="Unity Cel-Shaded Render Pipeline"
-        img="https://pro2-bar-s3-cdn-cf3.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/485ffae0-7448-4fd9-915a-61f7192ede9f.png?h=2be02d12d0958faae66818c150bba371"
-        url="https://fr4ct1ons.myportfolio.com/cel-shaded-render-pipeline"></GalleryEntry>
+      <Page title = "SOFTWARE" subtitle = "Other works of mine, not limited to games or art"></Page>
+      {Posts}
+      {/*<GalleryEntry title="Unreal water shader"
+      img="https://pro2-bar-s3-cdn-cf5.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/6f71a0c5-8cc3-4d7d-9b74-bf2a0bcc2a8d.png?h=f74f57784e5d1808d20b4f08dbc531de"
+  url="https://fr4ct1ons.myportfolio.com/stylized-unreal-ocean-water-shader"></GalleryEntry>*/}
     </Layout>
   )
 }
+
+export default Softwares
+
+      //<GalleryEntry title={edge.node.frontmatter.title} url={edge.node.frontmatter.slug} img={edge.node.frontmatter.iconImage}/> 
+
+      
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            
+            gallery
+            slug
+            title
+            shortTitle
+            Image01{
+              childImageSharp {
+                gatsbyImageData(blurredOptions: {width: 100}, placeholder: BLURRED)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
