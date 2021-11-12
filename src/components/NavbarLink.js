@@ -15,7 +15,7 @@ render(){
             newColor = "rgb(255, 0, 0)";
             break;
         case 2:
-            newColor = "rgb(220,85,220)";
+            newColor = "rgb(0, 255, 255)";
             break;
         case 3:
             newColor = "rgb(225,220,80)";

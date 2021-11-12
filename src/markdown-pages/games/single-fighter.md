@@ -5,6 +5,7 @@ gallery: "games"
 title: "Single Fighter - 3D Unity fighting game"
 shortTitle: "Single Fighter"
 Image01: ../../images/SF.png
+subtitle: "Sole programmer"
 ---
 
 <img src="https://i.imgur.com/ydjSKmM.png" style="width: 50em"/>

@@ -5,6 +5,7 @@ gallery: "games"
 title: "Neon - Unity networked FPS"
 shortTitle: "Neon"
 Image01: ../../images/Neon.png
+subtitle: "Sole networking programmer"
 ---
 
 <img src="https://i.imgur.com/iRBCFPx.png?1" style="width: 50em"/>

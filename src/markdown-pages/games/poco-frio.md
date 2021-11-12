@@ -5,6 +5,7 @@ gallery: "games"
 title: "Poço Frio - Unity TPS"
 shortTitle: "Poço Frio"
 Image01: ../../images/PocoFrio.jpg
+subtitle: "Gameplay programmer"
 ---
 
 <img src="https://i.imgur.com/rrY0tFd.jpg" style="width: 50em"/>

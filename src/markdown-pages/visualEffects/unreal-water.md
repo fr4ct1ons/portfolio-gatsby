@@ -1,8 +1,8 @@
 ---
 title: "Ocean water - Unreal Shader"
-gallery: "art"
+gallery: "visualEffects"
 Image01: ../../images/unrealWater.png
-slug: "/artworks/unrealOceanShader"
+slug: "/visualEffects/unrealOceanShader"
 shortTitle: "Unreal water shader"
 date: "2020-09-01"
 ---

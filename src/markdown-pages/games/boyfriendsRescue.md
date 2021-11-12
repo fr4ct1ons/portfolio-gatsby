@@ -5,6 +5,7 @@ gallery: "games"
 title: "Boyfriend's Rescue - 2D Unity platformer"
 shortTitle: "Boyfriend's Rescue"
 Image01: ../../images/BFR.png
+subtitle: "Intern Unity programmer"
 ---
 
 <img src="https://i.imgur.com/yabV6RE.png" style="width: 50em">

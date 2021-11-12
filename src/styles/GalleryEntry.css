@@ -8,7 +8,7 @@
     margin-bottom: 2%;
     margin-left: 0.5%;
     margin-right: 0.5%;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid cyan;
 
 }
 
@@ -27,7 +27,7 @@
     font-size: 180%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    color: aqua;
+    color: cyan;
     text-decoration: none;
     font-family: 'Montserrat';
 }

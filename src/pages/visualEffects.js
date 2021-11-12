@@ -1,17 +1,17 @@
 import React from "react";
 import Page from "../components/Page";
-import {graphql} from "gatsby";
-import Layout from "../components/layout";
 import GalleryEntryDynamic from "../components/GalleryEntryDynamic"
+import Layout from "../components/layout";
+import {graphql} from "gatsby"
 import {getImage} from "gatsby-plugin-image"
 
-const GameGallery = ({ 
+const ArtGallery = ({ 
   data: 
   {
     allMarkdownRemark : { edges },
   }, 
 }) => {
-  const Posts = edges.filter(edge =>edge.node.frontmatter.gallery == "games" ).map(edge =>
+  const Posts = edges.filter(edge =>edge.node.frontmatter.gallery == "visualEffects" ).map(edge =>
       {
         return(
         <GalleryEntryDynamic title={edge.node.frontmatter.shortTitle}
@@ -27,7 +27,7 @@ const GameGallery = ({
 
   return (
     <Layout>
-      <Page title = "GAMES" subtitle = "Games I worked on, as a tech artist, programmer or other role"></Page>
+      <Page title = "VISUAL EFFECTS" subtitle = "VFXes I have created"></Page>
       {Posts}
       {/*<GalleryEntry title="Unreal water shader"
       img="https://pro2-bar-s3-cdn-cf5.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/6f71a0c5-8cc3-4d7d-9b74-bf2a0bcc2a8d.png?h=f74f57784e5d1808d20b4f08dbc531de"
@@ -36,7 +36,11 @@ const GameGallery = ({
   )
 }
 
-export default GameGallery
+export default ArtGallery
+
+      //<GalleryEntry title={edge.node.frontmatter.title} url={edge.node.frontmatter.slug} img={edge.node.frontmatter.iconImage}/> 
+
+      
 
 export const pageQuery = graphql`
   query {

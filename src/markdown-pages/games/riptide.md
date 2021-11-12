@@ -5,6 +5,7 @@ gallery: "games"
 title: "Riptide - Unreal space game prototype"
 shortTitle: "Riptide"
 Image01: ../../images/riptide.png
+subtitle: "Sole programmer"
 ---
 
 <img src="https://i.imgur.com/mOMVMMW.png" style="width: 70em"/>
