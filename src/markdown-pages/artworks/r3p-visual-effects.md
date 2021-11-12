@@ -1,11 +1,10 @@
 ---
 title: "Rise of the Third Power - Visual Effects"
 gallery: "art"
-Image01: ../../images/ArtWorks.png
+Image01: ../../images/Rise3Power.png
 slug: "/artworks/RiseThirdPowerVFX"
 shortTitle: "Rise of the Third Power VFX"
 date: "2021-04-01"
-
 ---
 
 ## Showcase of visual effects I made for Stegosoft Games' next title, Rise of the Third Power

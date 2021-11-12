@@ -4,7 +4,12 @@ import Layout from "../components/layout"
 import "../fonts/Arimo-Regular.ttf"
 import GalleryEntry from "../components/GalleryEntry"
 import artworks from "../images/ArtWorks.png"
-import software from "../images/CSRP.png"
+import software from "../images/software.png"
+import games from "../images/games.png"
+import {StaticImage} from "gatsby-plugin-image"
+
+import twitterI from "../images/socialMedia/twitter-icon.png"
+
 import {Link} from 'gatsby';
 
 export default function Home() {
@@ -17,8 +22,18 @@ export default function Home() {
     </div>
     <div>
     <GalleryEntry url="art" title="ART WORKS" img={artworks}/>
-    <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>
+    <GalleryEntry url="games" title="GAMES" img={games}/>
     <GalleryEntry url="software" title="SOFTWARE" img={software}/>
+    <div className="TextBlock">
+      <p>You can also follow me on social media, if you would like to. I'd greatly appreciate it! Links below.</p>
+      <div className="LinksBlock">
+        <Link to="https://twitter.com/fr4ct1ons"><StaticImage src="../images/socialMedia/twitter-icon.png"/></Link>
+        <Link to="https://github.com/lucena-fr4ct1ons"><StaticImage src="../images/socialMedia/github-icon.png"/></Link>
+        <Link to="https://fr4ct1ons.itch.io/"><StaticImage src="../images/socialMedia/itchio-icon.png"/></Link>
+        <Link to="https://sketchfab.com/fr4ct1ons"><StaticImage src="../images/socialMedia/sketchfab-icon.png"/></Link>
+        <Link to="https://gamejolt.com/@fr4ct1ons"><StaticImage src="../images/socialMedia/gamejolt-icon.png"/></Link>
+      </div>
+    </div>
     {/*
     <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>{/*
       <div className="inlineDiv">

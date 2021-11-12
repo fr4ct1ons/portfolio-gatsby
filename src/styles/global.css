@@ -19,6 +19,26 @@ html
   font-size: 1.5em;
 }
 
+.TextBlock a
+{
+  font-size: 1.8em;
+  color: cyan;
+  margin: 0.3em;
+  text-decoration: none;
+
+  font-family: 'Montserrat-Light';
+}
+
+.TextBlock a img
+{
+  width: 2em;
+}
+
+.TextBlock a:hover
+{
+  color: rgb(180, 255, 255);
+}
+
 h1
 {
   color: red;

@@ -41,6 +41,18 @@
     float: left;
 }
 
+.imageLinks
+{
+    display: inline;
+    margin: auto;
+    width: fit-content;
+}
+
+.imageLinks a img
+{
+  width: 2em;
+}
+
 .ContactForm
 {
     width: 60%;

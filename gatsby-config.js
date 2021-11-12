@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: `Gabriel Lucena's Portfolio`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
