@@ -9,7 +9,6 @@ module.exports = {
   siteMetadata: {
     title: `Gabriel Lucena's Portfolio`,
   },
-  pathPrefix: "",
   plugins: [
     {
       resolve: `gatsby-plugin-styled-components`,
