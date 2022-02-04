@@ -8,6 +8,7 @@ import software from "../images/software.png"
 import games from "../images/games.png"
 import vfxes from "../images/visualEffects.png"
 import {StaticImage} from "gatsby-plugin-image"
+import Skills from "../components/Skills"
 
 import {Link} from 'gatsby';
 
@@ -36,6 +37,7 @@ export default function Home() {
           <Link to="https://gamejolt.com/@fr4ct1ons"><StaticImage src="../images/socialMedia/gamejolt-icon.png"/></Link>
         </div>
       </div>
+      <Skills/>
     {/*
     <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>{/*
       <div className="inlineDiv">
