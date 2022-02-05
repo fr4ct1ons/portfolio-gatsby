@@ -13,6 +13,8 @@ import Skills from "../components/Skills"
 import {Link} from 'gatsby';
 import SkillItem from "../components/SkillItem"
 
+import "../styles/education.css"
+
 export default function Home() {
   return<Layout>
     <Page title = "WHO AM I" subtitle = "Introducing who I am, what I work with and my goals"></Page>
@@ -63,7 +65,7 @@ export default function Home() {
       <SkillItem img="AffinityDesigner.png" name="Affinity Designer"/>
       </Skills>
       </div>
-      <div className="skills" style={{width: "50%"}}>
+      <div className="skills" style={{width: "900px", flexWrap: "nowrap"}}>
         <h3>I am knowledgeable in the following topics</h3>
         <ul>
           <li>3D Modelling</li>
@@ -86,7 +88,24 @@ export default function Home() {
           <li>Procedural mesh generation</li>
         </ul>
       </div>
-    {}
+      <h1>EDUCATION</h1>
+      <div className="EducationItem">
+        <StaticImage src="../images/logos/UFRN.png"/>
+        <div className="Text">
+        <h1>BSc. Information Technology</h1>
+        <h2>Universidade Federal do Rio Grande do Norte</h2>
+        <h3>2018-2022</h3>
+        </div>
+      </div>
+
+      <div className="EducationItem">
+        <StaticImage src="../images/logos/IMD.png"/>
+        <div className="Text">
+        <h1>Game Dev. Pro. Certification</h1>
+        <h2>Instituto Metrópole Digital</h2>
+        <h3>2020</h3>
+        </div>
+      </div>
     </div>
 
   </Layout>

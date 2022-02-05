@@ -1,0 +1,51 @@
+.EducationItem
+{
+    background: rgba(10, 10, 10, 0);
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+.EducationItem img
+{
+    width: 420px;
+    height: 200px;
+}
+
+.EducationItem h1
+{
+    font-size: 2.5em;
+    margin-top: 0;
+    color: white;
+    float: left;
+    clear: both;
+}
+
+.EducationItem h2
+{
+    font-size: 1.4em;
+    font-weight: normal;
+    color: white;
+    float: left;
+    margin: 0.2em 0 ;
+    clear: both;
+}
+
+.EducationItem h3
+{
+    clear: both;
+    float: left;
+    font-size: 1.4em;
+    color: rgb(173, 173, 173);
+}
+
+.EducationItem .Text
+{
+    padding-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 600px;
+}
