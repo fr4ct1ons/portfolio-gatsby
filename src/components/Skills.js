@@ -1,32 +1,19 @@
-import React from "react";
+import React, { Children } from "react";
 import '../styles/skills.css'
 import SkillItem from "./SkillItem";
 
-export default function Skills()
+export default function Skills(props)
 {
-    return <div style={{marginTop: '2%'}}>
-    <div className="skills">
-        <h3>TOOLS</h3>
+
+  var style = {};
+  console.log(props.style);
+
+  return <div className="skills" style={props.style}>
+        <h3>{props.title}</h3>
 
         <div className="skillsGrid">
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
-        <SkillItem img='../images/skillsIcons/Unity.png'/>
+          {props.children}
         </div>
-          {/*<ul>
-            <li>Unity</li>
-            <li>Unreal</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>HLSL</li>
-            <li>Blender</li>
-            <li>Substance Painter</li>
-          </ul>*/}
       </div>
-    </div>
+    
 }

@@ -2,7 +2,7 @@ import React from "react";
 import { StaticImage, GatsbyImage, getImage, getImageData } from "gatsby-plugin-image";
 import {graphql, useStaticQuery} from "gatsby";
 
-export default function SkillItem()
+export default function SkillItem(props)
     {
         //const image = getImage(this.props.img);
 
@@ -23,13 +23,22 @@ export default function SkillItem()
           
         `);
         
-        const imageNode = data.allImageSharp.edges.filter(edge => edge.node.fixed.originalName == "Unity.png");
-        console.log(imageNode[0].node.gatsbyImageData);
+        const imageNode = data.allImageSharp.edges.filter(edge => edge.node.fixed.originalName == props.img);
+        //console.log(imageNode[0].node.gatsbyImageData);
         //const image = imageNode.node.gatsbyImageData;
 
         //console.log(image);
-        return (<div className="SkillItem">
+        var style = {};
+        if(props.size)
+        {
+          style.width = props.size
+        }
+
+        return (<div className="SkillItem" style={style}>
             <GatsbyImage image={imageNode[0].node.gatsbyImageData}/>
+            <div className="imageOverlay">
+              <p>{props.name}</p>
+            </div>
         </div>)
     }
 

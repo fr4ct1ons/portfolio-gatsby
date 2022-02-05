@@ -11,6 +11,7 @@ import {StaticImage} from "gatsby-plugin-image"
 import Skills from "../components/Skills"
 
 import {Link} from 'gatsby';
+import SkillItem from "../components/SkillItem"
 
 export default function Home() {
   return<Layout>
@@ -37,34 +38,55 @@ export default function Home() {
           <Link to="https://gamejolt.com/@fr4ct1ons"><StaticImage src="../images/socialMedia/gamejolt-icon.png"/></Link>
         </div>
       </div>
-      <Skills/>
-    {/*
-    <GalleryEntry url="games" title="GAMES" img="https://pro2-bar-s3-cdn-cf6.myportfolio.com/2e727ec7-f6e9-4fd4-b97f-93196e1208ad/72bce5f9-2596-4820-b1b7-dd2a0bd7d964.jpg?h=9446e874cc19b1da82695f7fc0dc722c"/>{/*
-      <div className="inlineDiv">
-        <h3>TOOLS</h3>
-          <ul>
-            <li>Unity</li>
-            <li>Unreal</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>HLSL</li>
-            <li>Blender</li>
-            <li>Substance Painter</li>
-          </ul>
+      <h1>TOOLS AND SKILLS</h1>
+      <Skills style={{width: '70%'}} title="I am highly skilled at">
+      <SkillItem size='10%' img="Unity.png" name="Unity"/>
+      <SkillItem size='10%' img="Unreal.png" name="Unreal"/>
+      <SkillItem size='10%' img="Shader.png" name="Shader Programming"/>
+      <SkillItem size='10%' img="Blender.png" name="Blender"/>      
+      <SkillItem size='10%' img="cpp.png" name="C++ Programming"/> 
+      <SkillItem size='10%' img="cs.png" name="C# Programming"/>
+      </Skills>
+
+      <div>
+      <Skills title="I am proficient with">
+      <SkillItem img="Krita.png" name="Krita"/>
+      <SkillItem img="ClipStudioPaint.png" name="Clip Studio Paint"/>
+      <SkillItem img="SubstancePainter.png" name="Substance 3D Painter"/> 
+      <SkillItem img="Flutter.png" name="Flutter"/> 
+      </Skills>
+
+      <Skills title="I know the basics of">
+      <SkillItem img="SubstanceDesigner.png" name="Substance 3D Designer"/>
+      <SkillItem img="HTML.png" name={"HTML CSS JavaScript"}/>
+      <SkillItem img="ReactJS.png" name="React.JS"/>
+      <SkillItem img="AffinityDesigner.png" name="Affinity Designer"/>
+      </Skills>
       </div>
-      <div className="inlineDiv">
-        <h3>SKILLS</h3>
-          <ul>
-            <li>VFX creation</li>
-            <li>3D modelling</li>
-            <li>Rigging</li>
-            <li>3D Animation</li>
-            <li>Shader development</li>
-            <li>Unity multiplayer</li>
-            <li>Tool development</li>
-          </ul>
+      <div className="skills" style={{width: "50%"}}>
+        <h3>I am knowledgeable in the following topics</h3>
+        <ul>
+          <li>3D Modelling</li>
+          <li>Visual Effects production</li>
+          <li>Particle Systems</li>
+          <li>Post Processing configuration</li>
+          <li>Material configuration</li>
+          <li>UV mapping</li>
+          <li>Rigging & animation</li>
+          <li>In-engine Lighting setup</li>
+        </ul>
+        <ul>
+          <li>General Programming</li>
+          <li>HUD configuration</li>
+          <li>In-engine environment production</li>
+          <li>Tool development</li>
+          <li>Unity Multiplayer w/ Mirror</li>
+          <li>Basic performance optimization</li>
+          <li>Design Patterns</li>
+          <li>Procedural mesh generation</li>
+        </ul>
       </div>
-*/}
+    {}
     </div>
 
   </Layout>
