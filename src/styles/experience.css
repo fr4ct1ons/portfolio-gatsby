@@ -1,0 +1,62 @@
+.ExperienceItem
+{
+    background: rgba(10, 10, 10, 0);
+    width: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
+    /*border-bottom: 2px solid red;*/
+}
+
+.ExperienceItem h6
+{
+    height: 20%;
+    width: auto;
+}
+
+.ExperienceItem h1
+{
+    font-size: 2.5em;
+    margin: 0;
+    color: white;
+    text-align: left;
+}
+
+.ExperienceItem h2
+{
+    font-size: 1.4em;
+    font-weight: normal;
+    color: white;
+    margin-top: 0.2em;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.ExperienceItem h3
+{
+    font-size: 1.5em;
+    color: rgb(173, 173, 173);
+    text-align: left;
+
+}
+
+.ExperienceItem p
+{
+    clear: both;
+    float: left;
+    font-size: 1.2em;
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+.ExperienceItem .Text
+{
+    padding-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 700px;
+}
