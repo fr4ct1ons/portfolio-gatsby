@@ -18,7 +18,14 @@ import "../styles/experience.css"
 
 export default function Home() {
   return<Layout>
-    <Page title = "WHO AM I" subtitle = "Introducing who I am, what I work with and my goals"></Page>
+    <h1>DEMO REEL</h1>
+    <iframe width="960" height="540" src="https://www.youtube-nocookie.com/embed/_AUPU_fNi3E" 
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+    <Page title = "ABOUT ME" subtitle = ""></Page>
     <div className="TextBlock">
       <p>Hi there! I'm Gabriel Lucena, also known as FR4CT1ONS. I'm a brazilian game developer and tech artist.</p>
       <p>I have a bachelor's degree in information technology with experience with 2D and 3D games with Unity and Unreal, as well as with tools such as Blender and Substance Painter.</p>
